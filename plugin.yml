@@ -1,0 +1,26 @@
+name: GenderIdentifier
+main: genderidentifier.plugin.GenderIdentifierMain
+version: 1.0
+api-version: 1.16
+commands:
+    gender:
+      description: Everything to do with setting gender.
+      usage: /<command>
+    pronoun:
+      description: Everything to do with gender pronouns.
+      usage: /<command>
+permissions:
+     genderidentifier.*:
+        description: Permission for all genderidentifier commands.
+        children:
+           genderidentifier.checkgender: true
+           genderidentifier.help: true
+           genderidentifier.removegender: true
+           genderidentifier.listallgenders: true
+           genderidentifier.checksomeonegender: true
+           genderidentifier.setgender: true
+           genderidentifier.checkpronoun: true
+           genderidentifier.removepronoun: true
+           genderidentifier.listallpronouns: true
+           genderidentifier.checksomeonepronoun: true
+           genderidentifier.setpronoun: true
